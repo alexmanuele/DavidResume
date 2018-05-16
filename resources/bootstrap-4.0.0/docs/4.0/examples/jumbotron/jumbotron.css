@@ -1,0 +1,44 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+.jumbotron {
+    background-image: url(../../../../../images/david_thoughtful.JPG);
+    background-size: cover;
+    background-position: center;
+    color: white;
+   
+    
+    
+}
+.jumbotron-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0rem 2rem
+    
+    
+    
+}
+.resume-content-left{
+    padding-left: 5rem;
+    
+}
+.resume-content-right{
+    padding-right: 5rem;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.picture{
+    display: flex;
+}
+
+.project-image {
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  @include border-radius($card-inner-border-radius);
+}
